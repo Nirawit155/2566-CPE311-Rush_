@@ -1,3 +1,4 @@
+
 # เกมส์เศรษฐี
 วัตถุประสงค์ของโครงการนี้จัดทำเพื่อนำความรู้ที่ศึกษามาจากรายวิชา CPE-311/CPE-312 มาประยุกต์ให้เข้ากับบอร์ดเกมจากอุปกรณ์ที่ได้ศึกษาต่างๆจากการเรียนภาคปฎิบัติเพื่อสร้างลูกเล่นให้สอดคล้องกับรายวิชา
 
@@ -47,4 +48,4 @@
 # Board-Designed
 ![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1202596198490439691/1070087967294631976-283cde1b-df1c-47c1-83b5-60bda2ece5a2-6059968.399999976.png?ex=65ce07fc&is=65bb92fc&hm=589a5289ea82545f37a57a66f3a5ebd98d0fafb5d8d49b11d4c6412e6c27ccb6&)
 ## ตารางเวลาการทำโครงการ
-![enter image description here]([https://media.discordapp.net/attachments/1195246143551058003/1196448627514687569/image.png?ex=65b7aa9d&is=65a5359d&hm=a6a155d0616839125244236d02f8c140ef12d7fa3caa7cc4c6b90a00b092dc19&=&format=webp&quality=lossless&width=1440&height=430](https://media.discordapp.net/attachments/1195246143551058003/1202601538401476679/image.png?ex=65ce0cf6&is=65bb97f6&hm=5a67d70c8879cc0600f08ebb00c0144def0fe12d50826a399ca01748ce6b29c4&=&format=webp&quality=lossless&width=1440&height=426)https://media.discordapp.net/attachments/1195246143551058003/1202601538401476679/image.png?ex=65ce0cf6&is=65bb97f6&hm=5a67d70c8879cc0600f08ebb00c0144def0fe12d50826a399ca01748ce6b29c4&=&format=webp&quality=lossless&width=1440&height=426)
+![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1202601538401476679/image.png?ex=65ce0cf6&is=65bb97f6&hm=5a67d70c8879cc0600f08ebb00c0144def0fe12d50826a399ca01748ce6b29c4&=&format=webp&quality=lossless&width=1440&height=426)
