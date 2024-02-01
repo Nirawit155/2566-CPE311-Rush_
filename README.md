@@ -6,6 +6,7 @@
 -   [ความต้องการของโครงการ](#%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3)
 -   [อุปกรณ์ที่ใช้](#%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89)
 -   [ช่องpinที่ใช้](#%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87pin%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89)
+- [Board-Designed](#board-designed)
 -   [ตารางเวลาการทำโครงการ](#%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B3%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3)
 
 ## ความต้องการของโครงการ
@@ -42,5 +43,8 @@
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1052222106798141490/1201420239074775120/Pin.png?ex=65c9c0ca&is=65b74bca&hm=1ccf7526eb2cf772ad8d284b5d19d2e450a9004baf9d83ec005200716f57ba53&)
 ![enter image description here](https://cdn.discordapp.com/attachments/1052222106798141490/1201420239544528896/Pin.png?ex=65c9c0ca&is=65b74bca&hm=7f681a4b47b8d528f22d174d2e1b7e8d874106079d846d6dcb0449bac8ae0d43&)
+
+# Board-Designed
+![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1202596198490439691/1070087967294631976-283cde1b-df1c-47c1-83b5-60bda2ece5a2-6059968.399999976.png?ex=65ce07fc&is=65bb92fc&hm=589a5289ea82545f37a57a66f3a5ebd98d0fafb5d8d49b11d4c6412e6c27ccb6&)
 ## ตารางเวลาการทำโครงการ
 ![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1196448627514687569/image.png?ex=65b7aa9d&is=65a5359d&hm=a6a155d0616839125244236d02f8c140ef12d7fa3caa7cc4c6b90a00b092dc19&=&format=webp&quality=lossless&width=1440&height=430)
