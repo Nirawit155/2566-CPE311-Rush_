@@ -45,6 +45,11 @@
 ![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1205443312538877962/Pin.png?ex=65d86391&is=65c5ee91&hm=11fbfef4d3e7af68b8e6a9fe30527897d143e0af0cdb9dc48288c2696210178f&=&format=webp&quality=lossless&width=823&height=671)
 
 
+
+## DIAGRAM
+![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1205443491614826537/PlayerAndDiceBoard_Diagram.jpg?ex=65d863bc&is=65c5eebc&hm=5ab641c7a5ffec2b8163ccdba5111631f6c51ad13e04353baf35bdf33b6fcc09&=&format=webp&width=523&height=671)
+
+
 # Board-Designed
 ![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1202596198490439691/1070087967294631976-283cde1b-df1c-47c1-83b5-60bda2ece5a2-6059968.399999976.png?ex=65ce07fc&is=65bb92fc&hm=589a5289ea82545f37a57a66f3a5ebd98d0fafb5d8d49b11d4c6412e6c27ccb6&)
 ## ตารางเวลาการทำโครงการ
