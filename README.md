@@ -41,9 +41,9 @@
  8. A lot of wires
 
 # ช่องpinที่ใช้
+![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1205443256712831026/Pin.png?ex=65d86384&is=65c5ee84&hm=0d2cbaf7635f4895cb187ffe2a281eaa7d8fe4509ad0c59d6c76ba164329bedb&=&format=webp&quality=lossless)
+![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1205443312538877962/Pin.png?ex=65d86391&is=65c5ee91&hm=11fbfef4d3e7af68b8e6a9fe30527897d143e0af0cdb9dc48288c2696210178f&=&format=webp&quality=lossless&width=823&height=671)
 
-![enter image description here](https://cdn.discordapp.com/attachments/1052222106798141490/1201420239074775120/Pin.png?ex=65c9c0ca&is=65b74bca&hm=1ccf7526eb2cf772ad8d284b5d19d2e450a9004baf9d83ec005200716f57ba53&)
-![enter image description here](https://cdn.discordapp.com/attachments/1052222106798141490/1201420239544528896/Pin.png?ex=65c9c0ca&is=65b74bca&hm=7f681a4b47b8d528f22d174d2e1b7e8d874106079d846d6dcb0449bac8ae0d43&)
 
 # Board-Designed
 ![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1202596198490439691/1070087967294631976-283cde1b-df1c-47c1-83b5-60bda2ece5a2-6059968.399999976.png?ex=65ce07fc&is=65bb92fc&hm=589a5289ea82545f37a57a66f3a5ebd98d0fafb5d8d49b11d4c6412e6c27ccb6&)
