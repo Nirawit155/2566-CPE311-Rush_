@@ -54,4 +54,4 @@
 # Board-Designed
 ![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1202596198490439691/1070087967294631976-283cde1b-df1c-47c1-83b5-60bda2ece5a2-6059968.399999976.png?ex=65ce07fc&is=65bb92fc&hm=589a5289ea82545f37a57a66f3a5ebd98d0fafb5d8d49b11d4c6412e6c27ccb6&)
 ## ตารางเวลาการทำโครงการ
-![enter image description here](https://media.discordapp.net/attachments/744332116808171530/1205265035031486564/image.png?ex=65d7bd89&is=65c54889&hm=60fed954cb2ea19ff145199a7e738a2de8978e228ff350bfb6f5badb4454cddc&=&format=webp&quality=lossless&width=962&height=285)
+![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1207351700189618176/image.png?ex=65df54e4&is=65ccdfe4&hm=40a0070fc69798d504ced05a3541bdb940b9ccddf623bfaf5f093a9cd593df01&)
