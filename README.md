@@ -1,5 +1,6 @@
 
 
+
 # เกมส์เศรษฐี
 วัตถุประสงค์ของโครงการนี้จัดทำเพื่อนำความรู้ที่ศึกษามาจากรายวิชา CPE-311/CPE-312 มาประยุกต์ให้เข้ากับบอร์ดเกมจากอุปกรณ์ที่ได้ศึกษาต่างๆจากการเรียนภาคปฎิบัติเพื่อสร้างลูกเล่นให้สอดคล้องกับรายวิชา
 
@@ -30,7 +31,7 @@
  
 
 # อุปกรณ์ที่ใช้
-Equiqment: PositionBoard
+Equipment: PositionBoard
 1.LED(rgb) 28 pieces
 2.A resistor(1k)
 3.resistor(330) 2 pieces
@@ -38,7 +39,7 @@ Equiqment: PositionBoard
 5.A transistor(2N4401)
 6.A lot of wires
 
-Equiqment: PlayerAndDice
+Equipment: PlayerAndDice
 1.7segment 2 pieces
 2.resistor(1k) 13 pieces
 3.resistor(330) 21 pieces
