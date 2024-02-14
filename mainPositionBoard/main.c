@@ -42,6 +42,7 @@ int status = 0;		// 0=stop , 1=playing , 2=Go RESET
 int turn = 0; //0 = player1, 1 = player2
 int idx=0;
 int check =0;
+int end =0;
 char TxT_R[] = "R";
 /***************************Create Value Zone***************************/
 /////////////////////////////////////////////////////////////////////////
@@ -68,6 +69,8 @@ void Run(void)
 		WaitB();
 		turn++ ;
 		turn%=2;
+		if(end == 1)
+			break;
 	}
 }
 
@@ -333,7 +336,8 @@ void EXTI3_IRQHandler(void)
 			buy = 1;
 		else if(rec[idx] == 'E')
 			buy = 0;
-		
+		else if(rec[idx] == 'O')
+			end = 1;
 		idx++;
 		idx%=10;
 		LL_USART_ClearFlag_IDLE(USART2);
