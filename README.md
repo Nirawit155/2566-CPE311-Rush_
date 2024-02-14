@@ -1,4 +1,5 @@
 
+
 # เกมส์เศรษฐี
 วัตถุประสงค์ของโครงการนี้จัดทำเพื่อนำความรู้ที่ศึกษามาจากรายวิชา CPE-311/CPE-312 มาประยุกต์ให้เข้ากับบอร์ดเกมจากอุปกรณ์ที่ได้ศึกษาต่างๆจากการเรียนภาคปฎิบัติเพื่อสร้างลูกเล่นให้สอดคล้องกับรายวิชา
 
@@ -32,8 +33,8 @@
 # อุปกรณ์ที่ใช้
 
  1. 7segment 2 ชิ้น
- 2. resistor(1k) 10 ชิ้น
- 3. resistor(330) 18 ชิ้น
+ 2. resistor(1k) 12 ชิ้น
+ 3. resistor(330) 22 ชิ้น
  4. transistor(2N4401) 8 ชิ้น
  5. switch 4 ชิ้น
  6. LED 7 ชิ้น
@@ -41,14 +42,14 @@
  8. A lot of wires
 
 # ช่องpinที่ใช้
-![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1205443256712831026/Pin.png?ex=65d86384&is=65c5ee84&hm=0d2cbaf7635f4895cb187ffe2a281eaa7d8fe4509ad0c59d6c76ba164329bedb&=&format=webp&quality=lossless)
-![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1205443312538877962/Pin.png?ex=65d86391&is=65c5ee91&hm=11fbfef4d3e7af68b8e6a9fe30527897d143e0af0cdb9dc48288c2696210178f&=&format=webp&quality=lossless&width=823&height=671)
+![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1207348170795782246/1-1.jpg?ex=65df519b&is=65ccdc9b&hm=a48e55f9790d8354ba3bb5eeb4e0d50f6b1f1dcf883c29c87720b46c3d38b185&)
+![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1207347084513124412/-1.jpg?ex=65df5098&is=65ccdb98&hm=0215f888c4918f8628d77caf0dff3dccde45b17ed0e3104f6c33ffd477c671a8&=&format=webp&width=822&height=671)
 
 
 
 ## DIAGRAM
-![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1205443491614826537/PlayerAndDiceBoard_Diagram.jpg?ex=65d863bc&is=65c5eebc&hm=5ab641c7a5ffec2b8163ccdba5111631f6c51ad13e04353baf35bdf33b6fcc09&=&format=webp&width=523&height=671)
-
+![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1206936855824826418/image.png?ex=65ddd28a&is=65cb5d8a&hm=684853b2b2b824165118d6b92b8b11bb2f16d7c1efaa34ea8545f84a89746118&)
+![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1207346447272513597/Screenshot_2024-02-14_222320.png?ex=65df5000&is=65ccdb00&hm=7fda4a5f4b8d7c6a1737107455e240ba87a6548f30a6b4124b76003b8a9ade7c&)
 
 # Board-Designed
 ![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1202596198490439691/1070087967294631976-283cde1b-df1c-47c1-83b5-60bda2ece5a2-6059968.399999976.png?ex=65ce07fc&is=65bb92fc&hm=589a5289ea82545f37a57a66f3a5ebd98d0fafb5d8d49b11d4c6412e6c27ccb6&)
