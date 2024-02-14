@@ -31,15 +31,22 @@
  
 
 # อุปกรณ์ที่ใช้
+Equiqment: PositionBoard
+1.LED(rgb) 28 pieces
+2.A resistor(1k)
+3.resistor(330) 2 pieces
+4.A speaker
+5.A transistor(2N4401)
+6.A lot of wires
 
- 1. 7segment 2 ชิ้น
- 2. resistor(1k) 12 ชิ้น
- 3. resistor(330) 22 ชิ้น
- 4. transistor(2N4401) 8 ชิ้น
- 5. switch 4 ชิ้น
- 6. LED 7 ชิ้น
- 7. LED(rgb) 28 ชิ้น
- 8. A lot of wires
+Equiqment: PlayerAndDice
+1.7segment 2 pieces
+2.resistor(1k) 13 pieces
+3.resistor(330) 21 pieces
+4.transistor(2N4401) 8 pieces
+5.switch 5 pieces
+6.LED 7 pieces
+7.A lot of wires
 
 # ช่องpinที่ใช้
 ![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1207348170795782246/1-1.jpg?ex=65df519b&is=65ccdc9b&hm=a48e55f9790d8354ba3bb5eeb4e0d50f6b1f1dcf883c29c87720b46c3d38b185&)
