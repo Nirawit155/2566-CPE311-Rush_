@@ -85,16 +85,13 @@ struct Player P[2] = {{100, 1, 0}, {100, 1, 0}};
 
 int main(void)
 {
-	rec;
   SystemClock_Config();
 	Gpio_Config();
 	Usart_Config();
 	Usart_SendString(TxT_S, sizeof(TxT_S)); 	//Restart
 	while(1)
 	{
-			
 			Run();
-		
 	}
 }
 /***************************Main***************************/
@@ -106,18 +103,18 @@ void Run()
 	while(1)
 	{
 		turn=1;
-		status=2;
 		Dice(1); //Dice player 1
-		status=3;
 		WaitReady();
-		status=4;
 		GameRun(1);
-		
+		if(P[0].Money < 0 || P[1].Money < 0)
+		{
+			Usart_SendString(TxT_OVER, sizeof(TxT_OVER));
+			break;
+		}
 		turn=2;
 		Dice(2); //Dice player 2
 		WaitReady();
 		GameRun(2);
-		
 		if(P[0].Money < 0 || P[1].Money < 0)
 		{
 			Usart_SendString(TxT_OVER, sizeof(TxT_OVER));
@@ -423,8 +420,6 @@ void Dice(int Player)
 				Usart_SendString(TxT_D, sizeof(TxT_D));
 			}
 		}
-	
-	yy=1;
 }
 
 void Show_Money(int P1, int P2)
