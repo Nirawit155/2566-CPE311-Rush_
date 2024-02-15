@@ -7,9 +7,32 @@
 #include "stm32l1xx_ll_system.h"
 #include "stm32l1xx_ll_usart.h"
 #include "stm32l1xx_ll_exti.h"
+#include "stm32l1xx_ll_tim.h"
 #include "dwt_delay.h"
 #include "stdio.h"
 #include "string.h"
+
+
+#define E						(uint16_t)1318.5
+#define A_5					(uint16_t)880		//Octave5
+#define A_6					(uint16_t)1760	//Octave6
+#define Db   /*C#*/ (uint16_t)1108.7
+#define Eb	 /*D#*/	(uint16_t)1244.5
+#define F					  (uint16_t)1396.9
+#define B						(uint16_t)1975
+#define Bb	 /*A#*/	(uint16_t)923.33
+#define D						(uint16_t)1174.7
+#define Gb					/*F#*/(uint16_t)1480
+#define G						(uint16_t)1568
+#define C						(uint16_t)1046.5
+#define MUTE				(uint16_t)2000000
+
+/*for 10ms update event*/
+#define TIMx_PSC			2 
+
+/*Macro function for ARR calculation*/
+#define ARR_CALCULATE(N) ((32000000) / ((TIMx_PSC) * (N)))
+
 ///////////////////////////////////////////////////////////////////////////
 /***************************Create Funtion Zone***************************/
 void SystemClock_Config(void);
@@ -23,6 +46,14 @@ void WaitD(void);
 void WaitB(void);
 void Move(void);
 void Run(void);
+
+void SystemClock_Config(void);
+void TIM_BASE_Config(uint16_t);
+void TIM_OC_GPIO_Config(void);
+void TIM_OC_Config(int);
+uint16_t TIM_BASE_DurationConfig(uint16_t);
+void End_Voice(void);
+
 /***************************Create Funtion Zone***************************/
 //////////////////////////////////////////////////////////////////////////
 /***************************Create Value Zone***************************/
@@ -44,6 +75,15 @@ int idx=0;
 int check =0;
 int end =0;
 char TxT_R[] = "R";
+
+uint16_t i = 0;
+
+/*note for play music*/
+uint16_t victory_note[] = 	//wait for fah create function
+{D, MUTE, D, MUTE, D, MUTE, D
+	,MUTE, MUTE, A_5, MUTE, MUTE, Bb, MUTE, C, MUTE
+	,D, MUTE, C, MUTE, D, D, D
+};
 /***************************Create Value Zone***************************/
 /////////////////////////////////////////////////////////////////////////
 											
@@ -60,6 +100,101 @@ int main()
 	}
 }
 
+void End_Voice(void)
+{
+	i=0;
+	TIM_OC_Config(ARR_CALCULATE(MUTE));	//call function(PWM) and receive result follow ARR_CALCULATE
+	TIM_BASE_DurationConfig(230); //call function(timer) was changed accordingly time(ms)
+	while(i < 21)
+	{
+		if(LL_TIM_IsActiveFlag_UPDATE(TIM2) == SET)  
+		{
+			LL_TIM_ClearFlag_UPDATE(TIM2);
+			TIM_BASE_DurationConfig(victory_note[i] == MUTE?60:250);	//if current note is MUTE time set 60ms else 230ms
+			LL_TIM_SetAutoReload(TIM4, ARR_CALCULATE(sizeof(victory_note)/sizeof(victory_note[i])>i?victory_note[i++]:MUTE)); //Change ARR of Timer PWM,sizeof intended for safe problem value trash in array
+	
+			LL_TIM_SetCounter(TIM2, 0);
+		}
+	}
+}
+
+uint16_t TIM_BASE_DurationConfig(uint16_t misec)
+{
+	LL_TIM_InitTypeDef timbase_initstructure;
+	
+	LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM2);
+	//Time-base configure
+	timbase_initstructure.ClockDivision = LL_TIM_CLOCKDIVISION_DIV1;
+	timbase_initstructure.CounterMode = LL_TIM_COUNTERMODE_UP;
+	timbase_initstructure.Autoreload = misec - 1; //ARR was changed accordingly misec
+	timbase_initstructure.Prescaler =  32000 - 1;
+	LL_TIM_Init(TIM2, &timbase_initstructure);
+	
+	LL_TIM_EnableCounter(TIM2); 
+	LL_TIM_ClearFlag_UPDATE(TIM2); //Force clear update flag
+}
+
+void TIM_BASE_Config(uint16_t ARR)
+{
+	LL_TIM_InitTypeDef timbase_initstructure;
+	
+	LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM4);
+	//Time-base configure
+	timbase_initstructure.ClockDivision = LL_TIM_CLOCKDIVISION_DIV1;
+	timbase_initstructure.CounterMode = LL_TIM_COUNTERMODE_UP;
+	timbase_initstructure.Autoreload = ARR - 1;
+	timbase_initstructure.Prescaler =  TIMx_PSC- 1;
+	LL_TIM_Init(TIM4, &timbase_initstructure);
+	
+	LL_TIM_EnableCounter(TIM4); 
+}
+
+
+void TIM_OC_GPIO_Config(void)
+{
+	LL_GPIO_InitTypeDef gpio_initstructure;
+	
+	LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
+	
+	gpio_initstructure.Mode = LL_GPIO_MODE_ALTERNATE;
+	gpio_initstructure.Alternate = LL_GPIO_AF_2;
+	gpio_initstructure.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+	gpio_initstructure.Pin = LL_GPIO_PIN_6;
+	gpio_initstructure.Pull = LL_GPIO_PULL_NO;
+	gpio_initstructure.Speed = LL_GPIO_SPEED_FREQ_VERY_HIGH;
+	LL_GPIO_Init(GPIOB, &gpio_initstructure);
+}
+
+void TIM_OC_Config(int note)
+{
+	LL_TIM_OC_InitTypeDef tim_oc_initstructure;
+	
+	TIM_OC_GPIO_Config();
+	TIM_BASE_Config(note);
+	
+	tim_oc_initstructure.OCState = LL_TIM_OCSTATE_DISABLE;
+	tim_oc_initstructure.OCMode = LL_TIM_OCMODE_PWM1;
+	tim_oc_initstructure.OCPolarity = LL_TIM_OCPOLARITY_HIGH;
+	tim_oc_initstructure.CompareValue = LL_TIM_GetAutoReload(TIM4) * 0.15;	//decrease volume(duty cycle)
+	LL_TIM_OC_Init(TIM4, LL_TIM_CHANNEL_CH1, &tim_oc_initstructure);
+	/*Interrupt Configure*/
+	NVIC_SetPriority(TIM4_IRQn, 1);
+	NVIC_EnableIRQ(TIM4_IRQn);
+	LL_TIM_EnableIT_CC1(TIM4);
+	
+	/*Start Output Compare in PWM Mode*/
+	LL_TIM_CC_EnableChannel(TIM4, LL_TIM_CHANNEL_CH1);
+	LL_TIM_EnableCounter(TIM4);
+}
+
+void TIM4_IRQHandler(void)
+{
+	if(LL_TIM_IsActiveFlag_CC1(TIM4) == SET)
+	{
+		LL_TIM_ClearFlag_CC1(TIM4);
+	}
+}
+
 void Run(void)
 {
 	while(status != 2)
@@ -70,7 +205,10 @@ void Run(void)
 		turn++ ;
 		turn%=2;
 		if(end == 1)
+		{
+			End_Voice();
 			break;
+		}
 	}
 }
 
