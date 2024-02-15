@@ -1,0 +1,9 @@
+	Equiqment
+
+1.7segment 2 pieces
+2.resistor(1k) 13 pieces
+3.resistor(330) 21 pieces
+4.transistor(2N4401) 8 pieces
+5.switch 5 pieces
+6.LED 7 pieces
+7.A lot of wires
