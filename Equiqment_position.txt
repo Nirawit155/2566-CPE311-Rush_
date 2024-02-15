@@ -1,7 +1,0 @@
-Equiqment
-1.LED(rgb) 28 pieces
-2.A resistor(1k)
-3.resistor(330) 2 pieces
-4.A speaker
-5.A transistor(2N4401)
-6.A lot of wires

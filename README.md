@@ -1,6 +1,5 @@
 
 
-
 # เกมส์เศรษฐี
 วัตถุประสงค์ของโครงการนี้จัดทำเพื่อนำความรู้ที่ศึกษามาจากรายวิชา CPE-311/CPE-312 มาประยุกต์ให้เข้ากับบอร์ดเกมจากอุปกรณ์ที่ได้ศึกษาต่างๆจากการเรียนภาคปฎิบัติเพื่อสร้างลูกเล่นให้สอดคล้องกับรายวิชา
 
@@ -28,25 +27,19 @@
  11.  สุ่มจำนวนเงิน
  12.  เสียภาษี
  13.  ตอนจบเกมจะมีเพลงแจ้งเตือนและLED ทุกดวงจะแสดงสีเป็นของคนชนะ ( เมื่อมีคนแพ้หรือชนะ )
+ 14.  จะมีปุ่มแดง เมื่อกดจะทำการ Reset game ทั้งหมด
  
 
 # อุปกรณ์ที่ใช้
-Equipment: PositionBoard
-1. LED(rgb) 28 pieces
-2. A resistor(1k)
-3. resistor(330) 2 pieces
-4. A speaker
-5. A transistor(2N4401)
-6. A lot of wires
 
-Equipment: PlayerAndDice
-1. 7segment 2 pieces
-2. resistor(1k) 13 pieces
-3. resistor(330) 21 pieces
-4. transistor(2N4401) 8 pieces
-5. switch 5 pieces
-6. LED 7 pieces
-7. A lot of wires
+ 1. 7segment 2 ชิ้น
+ 2. resistor(1k) 12 ชิ้น
+ 3. resistor(330) 22 ชิ้น
+ 4. transistor(2N4401) 8 ชิ้น
+ 5. switch 4 ชิ้น
+ 6. LED 7 ชิ้น
+ 7. LED(rgb) 28 ชิ้น
+ 8. A lot of wires
 
 # ช่องpinที่ใช้
 ![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1207348170795782246/1-1.jpg?ex=65df519b&is=65ccdc9b&hm=a48e55f9790d8354ba3bb5eeb4e0d50f6b1f1dcf883c29c87720b46c3d38b185&)
