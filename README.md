@@ -42,16 +42,16 @@
  8. A lot of wires
 
 # ช่องpinที่ใช้
-![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1207348170795782246/1-1.jpg?ex=65df519b&is=65ccdc9b&hm=a48e55f9790d8354ba3bb5eeb4e0d50f6b1f1dcf883c29c87720b46c3d38b185&)
-![enter image description here](https://media.discordapp.net/attachments/1195246143551058003/1207347084513124412/-1.jpg?ex=65df5098&is=65ccdb98&hm=0215f888c4918f8628d77caf0dff3dccde45b17ed0e3104f6c33ffd477c671a8&=&format=webp&width=822&height=671)
+![enter image description here](https://github.com/user-attachments/assets/5d25b918-42a3-4a21-a10e-9d45bf76a1f3)
+![enter image description here](https://github.com/user-attachments/assets/8ca301b6-c596-4a1c-83eb-54108b521000)
 
 
 
 ## DIAGRAM
-![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1206936855824826418/image.png?ex=65ddd28a&is=65cb5d8a&hm=684853b2b2b824165118d6b92b8b11bb2f16d7c1efaa34ea8545f84a89746118&)
-![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1207346447272513597/Screenshot_2024-02-14_222320.png?ex=65df5000&is=65ccdb00&hm=7fda4a5f4b8d7c6a1737107455e240ba87a6548f30a6b4124b76003b8a9ade7c&)
+![enter image description here](https://github.com/user-attachments/assets/f1ee411e-7665-46ab-ada8-04aa3b63275f)
+![enter image description here](https://github.com/user-attachments/assets/8a69b773-c3cc-46ec-acc4-6e966e2fc362)
 
 # Board-Designed
-![enter image description here](https://cdn.discordapp.com/attachments/1195246143551058003/1202596198490439691/1070087967294631976-283cde1b-df1c-47c1-83b5-60bda2ece5a2-6059968.399999976.png?ex=65ce07fc&is=65bb92fc&hm=589a5289ea82545f37a57a66f3a5ebd98d0fafb5d8d49b11d4c6412e6c27ccb6&)
+![enter image description here](https://github.com/user-attachments/assets/93a71133-7169-4ddb-9811-811adcb95b12)
 ## ตารางเวลาการทำโครงการ
-![enter image description here](https://drive.google.com/file/d/1tZ24LRuVN6vaOA3xj3_4hrQNlrI2Rdkp/view?usp=sharing)
+![enter image description here](https://github.com/user-attachments/assets/2f6e3a34-a948-4f8f-ac29-96189a9d2ac6)
